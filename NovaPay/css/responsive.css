@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+  .g-mid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .g-mid > :last-child {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 270px;
+    z-index: 40;
+    transform: translateX(-100%);
+    transition: 0.25s;
+  }
+  .sidebar.open {
+    transform: none;
+  }
+  .menu-btn {
+    display: grid;
+  }
+  .main {
+    padding: 16px;
+  }
+  .g-mid,
+  .g-bot,
+  .g2 {
+    grid-template-columns: 1fr;
+  }
+  .hero svg.art {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .stat svg.spark {
+    display: none;
+  }
+  .donut {
+    margin: auto;
+  }
+  .kpis {
+    grid-template-columns: 1fr 1fr;
+  }
+}

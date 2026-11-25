@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NovaPay – Your Digital Wallet</title>
+
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="home" viewBox="0 0 24 24">
+      <path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" />
+    </symbol>
+
+    <symbol id="wallet" viewBox="0 0 24 24">
+      <path d="M3 7a2 2 0 0 1 2-2h13v4" />
+      <path d="M3 7v11a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z" />
+      <circle cx="16" cy="14" r="1.2" />
+    </symbol>
+
+    <symbol id="plus-square" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="4" />
+      <path d="M12 8v8M8 12h8" />
+    </symbol>
+
+    <symbol id="minus-square" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="4" />
+      <path d="M8 12h8" />
+    </symbol>
+
+    <symbol id="list" viewBox="0 0 24 24">
+      <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+    </symbol>
+
+    <symbol id="chart" viewBox="0 0 24 24">
+      <path d="M5 21V10M12 21V4M19 21v-7" />
+    </symbol>
+
+    <symbol id="grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="2" />
+      <rect x="14" y="3" width="7" height="7" rx="2" />
+      <rect x="3" y="14" width="7" height="7" rx="2" />
+      <rect x="14" y="14" width="7" height="7" rx="2" />
+    </symbol>
+
+    <symbol id="user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21c0-4 4-6 8-6s8 2 8 6" />
+    </symbol>
+
+    <symbol id="gear" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9L7 7M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" />
+    </symbol>
+
+    <symbol id="logout" viewBox="0 0 24 24">
+      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+    </symbol>
+
+    <symbol id="search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" />
+      <path d="M21 21l-4.3-4.3" />
+    </symbol>
+
+    <symbol id="bell" viewBox="0 0 24 24">
+      <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10 21a2 2 0 0 0 4 0" />
+    </symbol>
+
+    <symbol id="send" viewBox="0 0 24 24">
+      <path d="M22 2L11 13M22 2l-7 20-4-9-9-4z" />
+    </symbol>
+
+    <symbol id="arrow-up" viewBox="0 0 24 24">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </symbol>
+
+    <symbol id="arrow-down" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12l7 7 7-7" />
+    </symbol>
+
+    <symbol id="plus-circle" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 8v8M8 12h8" />
+    </symbol>
+
+    <symbol id="minus-circle" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M8 12h8" />
+    </symbol>
+
+    <symbol id="trash" viewBox="0 0 24 24">
+      <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+    </symbol>
+
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </symbol>
+
+    <symbol id="cart" viewBox="0 0 24 24">
+      <circle cx="9" cy="20" r="1.5" />
+      <circle cx="18" cy="20" r="1.5" />
+      <path d="M2 3h3l3 12h11l2-8H6" />
+    </symbol>
+
+    <symbol id="bag" viewBox="0 0 24 24">
+      <path d="M5 8h14l-1 13H6zM9 8a3 3 0 0 1 6 0" />
+    </symbol>
+
+    <symbol id="gift" viewBox="0 0 24 24">
+      <rect x="3" y="8" width="18" height="4" />
+      <path d="M12 8v13M5 12v9h14v-9M8 8a2.5 2.5 0 1 1 0-5c3 0 4 5 4 5s1-5 4-5a2.5 2.5 0 1 1 0 5" />
+    </symbol>
+  </svg>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><img src="assets/images/logo.png" alt="">
+        <div><b>NovaPay</b><small>Your Digital Wallet</small></div>
+      </div>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#dashboard" data-route="dashboard"><svg class="ic">
+            <use href="#home" />
+          </svg>Dashboard
+        </a>
+
+        <a href="#wallet" data-route="wallet"><svg class="ic">
+            <use href="#wallet" />
+          </svg>Wallet
+        </a>
+
+        <button data-act="income"><svg class="ic">
+            <use href="#plus-square" />
+          </svg>Add Income
+        </button>
+
+        <button data-act="expense"><svg class="ic">
+            <use href="#minus-square" />
+          </svg>Add Expense
+        </button>
+
+        <a href="#transactions" data-route="transactions"><svg class="ic">
+            <use href="#list" />
+          </svg>Transactions
+        </a>
+
+        <a href="#analytics" data-route="analytics"><svg class="ic">
+            <use href="#chart" />
+          </svg>Analytics
+        </a>
+
+        <a href="#categories" data-route="categories"><svg class="ic">
+            <use href="#grid" />
+          </svg>Categories
+        </a>
+
+        <a href="#profile" data-route="profile"><svg class="ic">
+            <use href="#user" />
+          </svg>Profile
+        </a>
+
+        <a href="#settings" data-route="settings"><svg class="ic">
+            <use href="#gear" />
+          </svg>Settings
+        </a>
+      </nav>
+
+      <div class="nav foot"><button data-act="logout"><svg class="ic">
+            <use href="#logout" />
+          </svg>Logout</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" data-act="menu" aria-label="Open menu"><svg class="ic">
+            <use href="#menu" />
+          </svg>
+        </button>
+
+        <label class="search">
+          <svg class="ic">
+            <use href="#search" />
+          </svg>
+          <input id="q" type="search" placeholder="Search transactions…" aria-label="Search transactions">
+        </label>
+
+        <span class="sp"></span>
+        <button class="icon-btn" data-act="bell" aria-label="Notifications"><svg class="ic">
+            <use href="#bell" />
+          </svg>
+          <span class="dot"></span>
+        </button>
+
+        <a class="avatar" id="avatar" href="#profile" aria-label="Profile">JD</a>
+      </header>
+      <main id="view"></main>
+    </div>
+  </div>
+
+  <div class="lock">
+    <div><img src="assets/images/logo.png" width="64" height="64" alt="">
+      <h1>You're signed out</h1>
+      <p>This is a demo. Any sign-in works.</p><button class="btn primary" data-act="login">Sign in</button>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/transactions.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

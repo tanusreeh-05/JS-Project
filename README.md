@@ -1,4 +1,4 @@
-# NovaPay – Digital Wallet Demo
+# NovaPay – Digital Wallet Application
 
 NovaPay is a modern, interactive digital wallet web app built with plain **HTML, CSS and vanilla JavaScript**. It looks and behaves like a real wallet app, but it runs entirely in your browser: no backend, no database and no external APIs. Demo data is saved with the browser's `localStorage`, so it survives a page refresh.
 
@@ -44,15 +44,14 @@ NovaPay/
 │   ├── components.css    # cards, charts, lists, wallet card, etc.
 │   └── responsive.css    # tablet and mobile breakpoints
 ├── js/
-│   ├── utils.js          # formatting (money, dates), icons, toasts, category colours
-│   ├── demo-data.js      # sample user and transactions
-│   ├── storage.js        # save / load / reset through localStorage
-│   ├── wallet.js         # balance maths, income, expenses, transfers, monthly totals
-│   ├── transactions.js   # transaction rows, list, search and filters
-│   ├── dashboard.js      # dashboard, charts, analytics and categories pages
-│   └── main.js           # navigation, modals, events, profile and settings
-└── docs/
-    └── user-guide.md
+    ├── utils.js          # formatting (money, dates), icons, toasts, category colours
+    ├── demo-data.js      # sample user and transactions
+    ├── storage.js        # save / load / reset through localStorage
+    ├── wallet.js         # balance maths, income, expenses, transfers, monthly totals
+    ├── transactions.js   # transaction rows, list, search and filters
+    ├── dashboard.js      # dashboard, charts, analytics and categories pages
+    └── main.js           # navigation, modals, events, profile and settings
+
 ```
 
 Scripts load in this order (set in `index.html`): `utils` → `demo-data` → `storage` → `wallet` → `transactions` → `dashboard` → `main`. Each module attaches itself to a single global namespace, `NP`.

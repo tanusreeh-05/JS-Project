@@ -43,7 +43,7 @@ NovaPay/
 │   ├── layout.css        # sidebar, top bar, page grids
 │   ├── components.css    # cards, charts, lists, wallet card, etc.
 │   └── responsive.css    # tablet and mobile breakpoints
-├── js/
+└── js/
     ├── utils.js          # formatting (money, dates), icons, toasts, category colours
     ├── demo-data.js      # sample user and transactions
     ├── storage.js        # save / load / reset through localStorage

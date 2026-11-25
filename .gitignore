@@ -1,0 +1,21 @@
+# Local Environments
+.env
+.env.local
+.env.development.local
+*.pem
+*.key
+
+# Dependencies & Build Outputs
+node_modules/
+vendor/
+dist/
+build/
+.next/
+out/
+
+# IDE & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
